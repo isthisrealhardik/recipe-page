@@ -21,6 +21,14 @@ body {
     background-color: var(--primary);
     font-family: var(--montserrat);
 }
+@media only screen and (min-wdith: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+}
 
 /* HERO */
 .Hero {
@@ -59,6 +67,15 @@ p {
     /* height: 200px; */
     object-fit: cover;
 }
+
+@media only screen and (min-width: 1024px) {
+    .Heading { font-size: 45px; }
+    p { font-size: 20px; }
+    .sixDots { width: 20px; }
+    .Main-Photo { margin-top: 10px; }
+    .Hero { margin-bottom: 0px; }
+}
+
 /* REQUIREMENTS */
 .Req {
     padding: 0px var(--globalSidePadding);
@@ -87,6 +104,12 @@ p {
 .head { font-weight: 700; text-transform: uppercase; color: var(--tertiarySecond); font-size: 9px; }
 .description { font-weight: 500; color: var(--secondary); font-size: 10px; }
 .orange { color: var(--primarySecond) }
+
+@media only screen and (min-width: 1024px) {
+    .Req {
+        margin: 15px 0px;
+    }
+}
 
 /* Ingredients */
 .Ingredients, .Instructions {
@@ -139,7 +162,7 @@ input {
     margin-top: 13px;
     border: none;
 }
-.orange-p {
+/* .orange-p {
     font-family: var(--playfairDisplay);
     font-weight: 700;
     font-size: 15px;
@@ -153,7 +176,7 @@ input {
     border-radius: 5px;
     margin-top: 13px;
     border: none;
-}
+} */
 .instruc-label {
     font-family: var(--montserrat);
     font-weight: 400;
@@ -169,6 +192,6 @@ input {
 }
 @media only screen and (min-width: 1024px) {
     .Hero, .Req, .Ingredients, .Instructions {
-        padding: 50px 300px;
+        padding: 0px 300px;
     }
 }
