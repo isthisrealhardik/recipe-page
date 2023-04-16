@@ -1,0 +1,174 @@
+:root {
+    /* fonts */
+    --montserrat: 'Montserrat'; /* 400, 500, 700 */
+    --playfairDisplay: 'Playfiar Display'; /* 400, 500 and italic */
+    /* colors */
+    --primary: #FAFAFA;
+    --primarySecond: #F2994A;
+    --secondary: #000;
+    --secondarySecond: #333;
+    --tertiary: #4F4F4F;
+    --tertiarySecond: #BDBDBD;
+    /* miscellaneous */
+    --globalSidePadding: 10px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background-color: var(--primary);
+    font-family: var(--montserrat);
+}
+
+/* HERO */
+.Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0px var(--globalSidePadding);
+    padding-top: 40px;
+}
+.Heading {
+    font-family: var(--playfairDisplay);
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.Para-with-six-dots {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+p {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--tertiary);
+}
+.sixDots {
+    padding-top: 5px;
+    padding-right: 5px;
+    width: 15px;
+}
+.Main-Photo {
+    width: 100%;
+    border-radius: 15px;
+    /* height: 200px; */
+    object-fit: cover;
+}
+/* REQUIREMENTS */
+.Req {
+    padding: 0px var(--globalSidePadding);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+}
+.Box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+}
+.Cutlery {
+    width: 20px;
+}
+.filter {
+    filter: invert(82%) sepia(29%) saturate(3857%) hue-rotate(325deg) brightness(99%) contrast(91%);
+}
+.Req-Text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--montserrat);
+    margin-left: 5px;
+}
+.head { font-weight: 700; text-transform: uppercase; color: var(--tertiarySecond); font-size: 9px; }
+.description { font-weight: 500; color: var(--secondary); font-size: 10px; }
+.orange { color: var(--primarySecond) }
+
+/* Ingredients */
+.Ingredients, .Instructions {
+    padding: 0px var(--globalSidePadding);
+    margin-top: 10px;
+}
+.ingredients-head, .instructions-head {
+    font-family: var(--playfairDisplay);
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--secondarySecond);
+}
+.List1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.list-head {
+    font-family: var(--playfairDisplay);
+    font-style: italic;
+    font-weight: 400;
+    color: var(--secondarySecond);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+label {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    color: var(--secondarySecond);
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+span {
+    font-weight: 700;
+}
+.Check {
+    display: flex;
+    align-items: start;
+}
+input {
+    margin-top: 13px;
+}
+.num {
+    font-family: var(--playfairDisplay);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--secondarySecond);
+    margin-top: 13px;
+    border: none;
+}
+.orange-p {
+    font-family: var(--playfairDisplay);
+    font-weight: 700;
+    font-size: 15px;
+    background-color: var(--primarySecond);
+    color: var(--primary);
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 13px;
+    border: none;
+}
+.instruc-label {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    margin-left: 10px;
+    font-size: 15px;
+    /* margin-top: 5px; */
+}
+.instruc {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: start;
+    justify-content: center;
+}
+@media only screen and (min-width: 1024px) {
+    .Hero, .Req, .Ingredients, .Instructions {
+        padding: 50px 300px;
+    }
+}
